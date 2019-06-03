@@ -11,4 +11,9 @@ public class DemoRestController {
 		return "Hello World";
 	}
 
+	@GetMapping("/greet/{name}")
+	public String greetHello(@PathVariable String name) {
+		return "Hello " + name;
+	}
+
 }
